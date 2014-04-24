@@ -36,7 +36,7 @@ class ScoreFixture extends CakeTestFixture {
 			'person_id' => 1,
 			'score' => 1,
 			'duration' => 1,
-			'time_taken' => '2014-02-08'
+			'time_taken' => '2014-02-23'
 		),
 	);
 

@@ -131,8 +131,8 @@ class PhpAclTest extends CakeTestCase {
 		$this->assertEquals(array(array('Role/IT')), $this->Acl->Aro->roles($user));
 		$this->assertTrue($this->Acl->check($user, '/rules/debugging/stats/pageload'));
 		$this->assertTrue($this->Acl->check($user, '/rules/debugging/sql/queries'));
-		// Role/default is allowed users dashboard, but not Role/IT
-		$this->assertFalse($this->Acl->check($user, '/controllers/users/dashboard'));
+		// Role/default is allowed users dashboard.ctp, but not Role/IT
+		$this->assertFalse($this->Acl->check($user, '/controllers/users/dashboard.ctp'));
 
 		$this->assertFalse($this->Acl->check($user, '/controllers/invoices/send'));
 		// wee add an more specific entry for user foo to also inherit from Role/accounting

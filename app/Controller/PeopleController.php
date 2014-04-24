@@ -2,7 +2,6 @@
 App::uses('AppController', 'Controller');
 /**
  * People Controller
- *
  * @property Person $Person
  * @property PaginatorComponent $Paginator
  */
@@ -14,6 +13,16 @@ class PeopleController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+/*
+* beforeFilter
+*/
+    public function beforeFilter(){
+        parent::beforeFilter();
+        // Allow users to
+        $this->Auth->allow('register', 'login');
+
+        Security::setHash('md5');
+    }
 
 /**
  * index method
@@ -23,7 +32,7 @@ class PeopleController extends AppController {
 	public function index() {
 		$this->Person->recursive = 0;
 		$this->set('people', $this->Paginator->paginate());
-	}
+    }
 
 /**
  * view method
@@ -100,4 +109,58 @@ class PeopleController extends AppController {
 			$this->Session->setFlash(__('The person could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+
+/**
+ * login page
+ */
+    public function login() {
+        $this->layout = 'question_bank';
+        $this->set('title_for_layout',"Login");
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                return $this->redirect($this->Auth->redirect());
+            }
+            $this->Session->setFlash(__('Invalid username or password, try again'));
+        }
+    }
+/*
+ * log out
+ */
+    public function logout() {
+        return $this->redirect($this->Auth->logout());
+    }
+
+ /*
+  * dashboard.ctp
+  */
+    public function dashboard(){
+        $this->layout = 'question_bank';
+        $this->set('title_for_layout',"Dashboard");
+    }
+/*
+ * register
+ */   
+	public function register(){
+		$this->layout = 'question_bank';
+	}
+
+/*
+	history
+*/
+	public function history(){
+		$this->layout = 'question_bank';
+
+		$this->loadModel('Score');
+		$result = $this->Score->getAllScores($this->Session->read('Auth.User')['id']);
+		$this->set('scores', $result);
+	}
+
+	/*
+	 * suggestion
+	 */
+	public function suggestion(){
+		$this->layout = 'question_bank';
+
+	}
+}

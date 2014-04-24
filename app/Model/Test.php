@@ -68,4 +68,51 @@ class Test extends AppModel {
 		)
 	);
 
+	/*
+	 * generate test
+	 * @params: number of question, time limit
+	 * @return: a test correspond to input parameters
+	 */
+	public function genTest($numberOfQuestions){
+		return $this->Question->find('all', array(
+					'limit' => $numberOfQuestions,
+					'order' => 'rand()'
+				));
+	}
+
+	/*
+	 * nextTestID
+	 * @return: next Test ID
+	 *
+	 */
+	public function nextTestId(){
+		$tests = $this->find('all', array(
+				'recursive' => -1,
+				'limit' => 1,
+				'fields' => array('id'),
+				'order' => 'id DESC'
+				));
+		$tests = array_filter($tests);
+		if( !empty($tests) ){
+			$testID = $tests[0]['Test']['id'] + 1;
+		}
+		else {
+			$testID = 1;
+		}
+		return $testID;
+	}
+
+	/*
+	 * saveTest
+	 * @param: test parameters
+	 *
+	 */
+	public function saveTest($id, $timeLimit, $allowAttemps){
+		$this->set(array(
+				'id' => $id, 
+				'time_limit' => $timeLimit,
+				'allow_attempts' => -1,
+			));
+		$this->save();
+	}
 }

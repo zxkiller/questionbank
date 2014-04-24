@@ -74,7 +74,7 @@
  *    $config['rules'] = array(
  *       'allow' => array(
  *       	'*' => 'Role/admin',
- *       	'controllers/users/(dashboard|profile)' => 'Role/default',
+ *       	'controllers/users/(dashboard.ctp|profile)' => 'Role/default',
  *       	'controllers/invoices/*' => 'Role/accountant',
  *       	'controllers/articles/*' => 'Role/editor',
  *       	'controllers/users/*'  => 'Role/manager',

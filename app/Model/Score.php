@@ -1,4 +1,4 @@
-<?php
+	<?php
 App::uses('AppModel', 'Model');
 /**
  * Score Model
@@ -54,5 +54,32 @@ class Score extends AppModel {
 			'finderQuery' => '',
 		)
 	);
-
+/*
+ * save a score
+ * @param:
+ */
+	public function saveScore($testId, $user, $score, $duration, $timeTaken){
+		$this->set(array(
+				'test_id' => $testId,
+				'person_id' => $user,
+				'score' => $score,
+				'duration' => $duration,
+				'time_taken' => $timeTaken
+				));
+		$this->save();
+	}
+/*
+ * get all user
+ */
+	public function getAllScores($id){
+		return $this->Score->find('all', array(
+				'conditions' => 'Score.person_id = '.$id,
+				'fields' => array(
+					'Score.score',
+					'Score.time_taken',
+					'Score.test_id',
+					'Test.time_limit'	
+				)
+			));
+	}
 }

@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 /**
  * Person Model
  *
@@ -45,4 +46,46 @@ class Person extends AppModel {
 		)
 	);
 
+    /*
+     * hash password before send it to db
+     */
+    public function beforeSave($options = array()) {
+        if (isset($this->data[$this->alias]['password'])) {
+            $passwordHasher = new SimplePasswordHasher();
+            $this->data[$this->alias]['password'] = $passwordHasher->hash(
+                $this->data[$this->alias]['password']
+            );
+        }
+        return true;
+    }
+
+    /*
+     * validate fields
+     */
+    public $validate = array(
+        'username' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Username is required'
+            )
+        ),
+        'password' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Password is required'
+            )
+        ),
+        'first_name' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'First name is required'
+            )
+        ),
+        'last_name' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Last name is required'
+            )
+        )
+    );
 }

@@ -32,4 +32,25 @@ class Progress extends AppModel {
 			'order' => ''
 		)
 	);
+/*
+ * store a progress row in db
+ * @param: info of a progress
+ */
+	public function saveProgress($person_id, $sub_category_id, $progress, $total, $date){
+		$this->set(array(
+			'person_id' => $person_id,
+			'sub_category_id' => $sub_category_id,
+			'progress' => $progress,
+			'total' => $total,
+			'date' => $date));
+		$this->save();
+	}
+/*
+ * calculate/update progress for a person, on a test
+ * @param: person_id, array of answers on questions
+ *		array: questionID => answer of user
+ */	
+	public function calculateProgress($person_id, $answers){
+
+	}
 }

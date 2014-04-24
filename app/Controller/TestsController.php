@@ -9,6 +9,16 @@ App::uses('AppController', 'Controller');
 class TestsController extends AppController {
 
 /**
+ * beforeFilter
+ *
+ */
+public function beforeFilter(){
+	parent::beforeFilter();
+
+	$this->Auth->allow('sampleTest', 'score');
+}
+
+/**
  * Components
  *
  * @var array
@@ -106,4 +116,150 @@ class TestsController extends AppController {
 			$this->Session->setFlash(__('The test could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+/*
+ *	sampleTest
+ */
+	public function sampleTest(){
+		$this->layout = 'question_bank';
+
+		// gen test
+		$questions = $this->Test->genTest(5);
+		$this->set('questions', $questions);
+
+		$this->set('duration', 5);
+		$this->set('numberOfQuestions', 5);
+		$this->set('testID', null);
+		$this->set('title_for_layout', 'Your first test!');
+	}
+
+/**
+ * chooseTest
+ *
+ * @throws NotFoundException
+ * @return void
+ */
+	public function chooseTest() {
+		$this->layout = 'question_bank';
+	}
+
+/**
+ * doTest
+ *
+ * @return void
+ */
+	public function doTest() {
+
+		if ($this->request->is('post')) {
+			$this->layout = 'question_bank';
+
+			// query <number of questions> from db, random ID
+			$questions = $this->Test->genTest($this->data['Test']['number_of_questions']);
+			$this->set('questions', $questions);
+
+			// create tests in database
+			$testID = $this->Test->nextTestId();
+			$this->set('testID', $testID);
+			$this->set('duration', $this->data['Test']['time_limit']);
+			$this->set('numberOfQuestions', $this->data['Test']['number_of_questions']);
+
+			$this->Test->saveTest($testID, $this->data['Test']['time_limit'], -1);
+
+			//create questions for test in db
+			$conn = mysql_connect("localhost:3306", 'root', 'Qwerty*');
+			mysql_select_db('questionbank');
+			foreach($questions as $question){
+				$query = 'INSERT INTO `tests_questions`(`test_id`, `question_id`) values('.$testID.','.$question['Question']['id'].');';
+				mysql_query($query, $conn);
+			}
+			mysql_close($conn);
+			
+			//save category
+			$this->Test->save(array(
+				'Test' => array
+				(
+					'id' => $testID
+				),
+				'Category' => array
+				(
+					'id' => 1)
+				)
+			);
+		}
+		// if it's not a post, return to chooseTest
+		else{
+			$this->redirect('chooseTest');
+		}
+	}
+
+/**
+ * score
+ *
+ * @return void
+ */
+	public function score() {
+		if( $this->request->is('post')){
+			
+			$this->layout = 'question_bank';
+			
+			//counter to determine score			
+			$correctCounter = 0;
+			$questionCounter = 0;
+
+			//check if answer is right or not
+			// it is: increse correctCounter by 1
+			$this->loadModel('Answer');
+
+			// count questions
+			// skip non-numeric key because there are some hidden fields
+			foreach ($this->data as $question => $id) {
+				if(!is_numeric($question))
+					continue;
+				$questionCounter++;
+			}
+
+			// remove with int(0)
+			function my_filter($var){
+				return ($var !== NULL && $var !== FALSE && $var !== '');
+			}
+
+			// filter empty-answered questions
+			// user did not tick in the answer
+			$filterd_array = array_filter($this->data, 'my_filter');
+
+			// get row in array, key=question_id, value=>answer_id
+			foreach ( $filterd_array as $question => $id) {
+
+				// there are some hidden fields, need to confirm that field is test's id or not
+				if(!is_numeric($question))
+					continue;
+				if($id == -1)
+					continue;	
+				$id++;
+
+				$result = $this->Answer->find('first', array(
+					'recursive' => -1,
+					'conditions' => 'question_id = '.$question.' and id = '.$id));
+				if( $result['Answer']['correctness'] == 1){
+					$correctCounter++;
+				}
+				
+			}
+			if($this->data['testID'] != null){
+				//save to database
+				//save score
+				$this->loadModel('Score');
+				$this->Score->saveScore($this->data['testID'], $this->Session->read('Auth.User')['id'], $questionCounter==0?0:$correctCounter/$questionCounter, -1, date("Y-m-d H:i:s"));
+			}
+			// set progress
+			$this->loadModel('Progress');
+			// $this->Progress->saveProgress($this->Session->read('Auth.User')['id'], $);
+			// set variable to view
+			$this->set('finalScore', $correctCounter);
+			$this->set('correct', array($correctCounter, $questionCounter));
+		}
+		else {
+			$this->redirect('chooseTest');
+		}
+	}
+}

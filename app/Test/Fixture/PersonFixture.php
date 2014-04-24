@@ -16,7 +16,7 @@ class PersonFixture extends CakeTestFixture {
 		'last_name' => array('type' => 'string', 'null' => true, 'default' => '0', 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'user_name' => array('type' => 'string', 'null' => true, 'default' => '0', 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'password' => array('type' => 'string', 'null' => true, 'default' => '0', 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'date_created' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'date_created' => array('type' => 'datetime', 'null' => true, 'default' => 'CURRENT_TIMESTAMP'),
 		'facebook' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
@@ -36,7 +36,7 @@ class PersonFixture extends CakeTestFixture {
 			'last_name' => 'Lorem ipsum dolor sit amet',
 			'user_name' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
-			'date_created' => 'Lorem ipsum dolor sit amet',
+			'date_created' => '2014-02-23 17:35:46',
 			'facebook' => 'Lorem ipsum dolor sit amet'
 		),
 	);

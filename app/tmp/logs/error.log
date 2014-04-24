@@ -1,0 +1,1247 @@
+2014-02-07 10:24:02 Error: [MissingControllerException] Controller class QuestionsController could not be found.
+Exception Attributes: array (
+  'class' => 'QuestionsController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/questions
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-07 10:27:06 Error: [MissingControllerException] Controller class SubCategoryController could not be found.
+Exception Attributes: array (
+  'class' => 'SubCategoryController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/sub_category
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-07 10:27:23 Error: [MissingControllerException] Controller class SubcategoryController could not be found.
+Exception Attributes: array (
+  'class' => 'SubcategoryController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/subcategory
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-07 15:46:14 Error: [NotFoundException] Invalid sub category
+Request URL: /physicsBank/sub_categories/delete/0
+Stack Trace:
+#0 [internal function]: SubCategoriesController->delete('0')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-07 15:46:55 Error: [NotFoundException] Invalid sub category
+Request URL: /physicsBank/sub_categories/delete/0
+Stack Trace:
+#0 [internal function]: SubCategoriesController->delete('0')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-07 15:50:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /physicsBank/sub_categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1832): DboSource->create(Object(SubCategory), Array, Array)
+#4 C:\xampp\htdocs\physicsBank\app\Controller\SubCategoriesController.php(51): Model->save(Array)
+#5 [internal function]: SubCategoriesController->add()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-07 15:51:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /physicsBank/sub_categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1832): DboSource->create(Object(SubCategory), Array, Array)
+#4 C:\xampp\htdocs\physicsBank\app\Controller\SubCategoriesController.php(51): Model->save(Array)
+#5 [internal function]: SubCategoriesController->add()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-07 15:53:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /physicsBank/sub_categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1832): DboSource->create(Object(SubCategory), Array, Array)
+#4 C:\xampp\htdocs\physicsBank\app\Controller\SubCategoriesController.php(51): Model->save(Array)
+#5 [internal function]: SubCategoriesController->add()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-07 15:56:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /physicsBank/sub_categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1832): DboSource->create(Object(SubCategory), Array, Array)
+#4 C:\xampp\htdocs\physicsBank\app\Controller\SubCategoriesController.php(51): Model->save(Array)
+#5 [internal function]: SubCategoriesController->add()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SubCategoriesController), Array)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SubCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-08 08:49:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0-0' for key 'PRIMARY'
+Request URL: /physicsBank/answers/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `qu...', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Answer), Array, Array)
+#4 C:\xampp\htdocs\physicsBank\app\Controller\AnswersController.php(51): Model->save(Array)
+#5 [internal function]: AnswersController->add()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AnswersController), Array)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AnswersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-23 17:29:36 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\xampp\htdocs\physicsBank\app\Model\Person.php, line 53]
+2014-02-23 17:29:36 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /physicsBank/people/add
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 53, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 53, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-23 23:56:07 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /physicsBank/app/View/HintView.php
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-24 00:00:31 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 108]
+2014-02-24 00:00:31 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /physicsBank/people
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 108)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 108, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 108, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 00:26:21 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 107]
+2014-02-24 00:26:21 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 00:26:38 Error: [MissingHelperException] Helper class SeassonHelper could not be found.
+Exception Attributes: array (
+  'class' => 'SeassonHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Seasson')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(818): HelperCollection->__isset('Seasson')
+#2 C:\xampp\htdocs\physicsBank\app\View\Layouts\question_bank.ctp(24): View->__get('Seasson')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(523): View->_render('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(468): View->renderLayout('', 'question_bank')
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-24 00:27:07 Error: [MissingHelperException] Helper class SessonHelper could not be found.
+Exception Attributes: array (
+  'class' => 'SessonHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Sesson')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(818): HelperCollection->__isset('Sesson')
+#2 C:\xampp\htdocs\physicsBank\app\View\Layouts\question_bank.ctp(24): View->__get('Sesson')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(523): View->_render('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(468): View->renderLayout('', 'question_bank')
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-24 00:29:43 Error: Fatal Error (1): Call to a member function login() on a non-object in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 117]
+2014-02-24 00:29:43 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 08:12:31 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\physicsBank\app\Model\Person.php, line 93]
+2014-02-24 08:12:31 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 08:12:57 Error: Fatal Error (1): Call to a member function login() on a non-object in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 117]
+2014-02-24 08:12:57 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 08:13:21 Error: Fatal Error (1): Call to a member function login() on a non-object in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 117]
+2014-02-24 08:13:21 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 08:13:34 Error: Fatal Error (1): Call to a member function login() on a non-object in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 117]
+2014-02-24 08:13:34 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-24 08:14:32 Error: Fatal Error (1): Call to a member function login() on a non-object in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 117]
+2014-02-24 08:14:32 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /physicsBank/people/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 117, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 09:14:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-25 09:14:53 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-25 09:23:46 Error: Fatal Error (4): syntax error, unexpected '*', expecting function (T_FUNCTION) in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 16]
+2014-02-25 09:23:46 Error: [FatalErrorException] syntax error, unexpected '*', expecting function (T_FUNCTION)
+Request URL: /physicsBank/People
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 09:29:48 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 22]
+2014-02-25 09:29:48 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 09:35:55 Error: Fatal Error (1): Call to undefined method PeopleController::layout() in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 126]
+2014-02-25 09:35:55 Error: [FatalErrorException] Call to undefined method PeopleController::layout()
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 10:17:54 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\xampp\htdocs\physicsBank\app\Controller\AppController.php, line 58]
+2014-02-25 10:17:54 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /physicsBank/People/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 58, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 58, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 12:42:21 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 119]
+2014-02-25 12:42:21 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF), expecting ',' or ';'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 119, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 119, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 12:43:07 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp, line 7]
+2014-02-25 12:43:07 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 12:43:57 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp, line 7]
+2014-02-25 12:43:57 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 12:46:09 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(867): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(341): View->loadHelpers()
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(1240): View->__construct(Object(PeopleController))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(938): Controller->_getViewObject()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-02-25 12:47:45 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(867): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(341): View->loadHelpers()
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(1240): View->__construct(Object(PeopleController))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(938): Controller->_getViewObject()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-02-25 12:47:47 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(867): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(341): View->loadHelpers()
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(1240): View->__construct(Object(PeopleController))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(938): Controller->_getViewObject()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-02-25 12:48:02 Error: Fatal Error (4): syntax error, unexpected '$helpers' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\xampp\htdocs\physicsBank\app\Controller\AppController.php, line 57]
+2014-02-25 12:48:02 Error: [FatalErrorException] syntax error, unexpected '$helpers' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 57, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 57, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 12:48:12 Error: [MissingHelperException] Helper class Helper could not be found.
+Exception Attributes: array (
+  'class' => 'Helper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(818): HelperCollection->__isset('')
+#2 C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp(7): View->__get('')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-25 12:48:33 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(867): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(341): View->loadHelpers()
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(1240): View->__construct(Object(PeopleController))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(938): Controller->_getViewObject()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-02-25 18:20:27 Error: Fatal Error (4): syntax error, unexpected '’' (T_STRING) in [C:\xampp\htdocs\physicsBank\app\View\Layouts\question_bank.ctp, line 15]
+2014-02-25 18:20:27 Error: [FatalErrorException] syntax error, unexpected '’' (T_STRING)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 20:56:40 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp, line 6]
+2014-02-25 20:56:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 22:04:02 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 24]
+2014-02-25 22:04:02 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 24, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 24, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 22:27:30 Error: Fatal Error (1): Call to undefined method AuthComponent::authError() in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 25]
+2014-02-25 22:27:30 Error: [FatalErrorException] Call to undefined method AuthComponent::authError()
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 25, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 25, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 22:28:20 Error: Fatal Error (1): Call to undefined function print_pr() in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 23]
+2014-02-25 22:28:20 Error: [FatalErrorException] Call to undefined function print_pr()
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 14:13:34 Error: [MissingControllerException] Controller class PhysicsbankController could not be found.
+Exception Attributes: array (
+  'class' => 'PhysicsbankController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/physicsbank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 14:17:24 Error: [MissingControllerException] Controller class PhysicsbankController could not be found.
+Exception Attributes: array (
+  'class' => 'PhysicsbankController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/physicsbank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 14:18:22 Error: [MissingControllerException] Controller class PhysicsbankController could not be found.
+Exception Attributes: array (
+  'class' => 'PhysicsbankController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/physicsbank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 14:49:44 Error: [CakeException] Authentication adapter "authError" was not found.
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Component\AuthComponent.php(673): AuthComponent->constructAuthenticate()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Component\AuthComponent.php(301): AuthComponent->_getUser()
+#2 [internal function]: AuthComponent->startup(Object(PeopleController))
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-26 16:30:48 Error: [MissingActionException] Action PeopleController::daá() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'daá',
+)
+Request URL: /physicsBank/people/da%C3%A1
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 16:33:39 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\physicsBank\app\View\Elements\menu.ctp, line 3]
+2014-02-26 16:33:39 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 16:34:13 Error: [MissingActionException] Action PeopleController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'home',
+)
+Request URL: /physicsBank/people/home
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 16:44:20 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 16:55:42 Error: [MissingActionException] Action PeopleController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'home',
+)
+Request URL: /physicsBank/people/home
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 16:55:57 Error: [MissingActionException] Action PeopleController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'home',
+)
+Request URL: /physicsBank/people/home
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 17:00:49 Error: [MissingControllerException] Controller class About-usController could not be found.
+Exception Attributes: array (
+  'class' => 'About-usController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/about-us
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 17:02:44 Error: [MissingActionException] Action PeopleController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'home',
+)
+Request URL: /physicsBank/people/home
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 17:02:49 Error: [MissingControllerException] Controller class About-usController could not be found.
+Exception Attributes: array (
+  'class' => 'About-usController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/about-us
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 17:03:26 Error: [MissingControllerException] Controller class AboutUsController could not be found.
+Exception Attributes: array (
+  'class' => 'AboutUsController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/about_us
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 17:04:01 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\physicsBank\app\View\Elements\menu.ctp, line 5]
+2014-02-26 17:04:01 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 20:39:49 Error: Fatal Error (4): syntax error, unexpected 'publuc' (T_STRING), expecting function (T_FUNCTION) in [C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php, line 113]
+2014-02-26 20:39:49 Error: [FatalErrorException] syntax error, unexpected 'publuc' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /physicsBank/tests/sampleTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 113, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 113, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 20:40:06 Error: [MissingActionException] Action TestsController::sampleTest() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestsController',
+  'action' => 'sampleTest',
+)
+Request URL: /physicsBank/tests/sampleTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 20:40:33 Error: [MissingViewException] View file "C:\xampp\htdocs\physicsBank\app\View\Tests\sample_test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\Tests\\sample_test.ctp',
+)
+Request URL: /physicsBank/tests/sampleTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-26 20:40:37 Error: [MissingViewException] View file "C:\xampp\htdocs\physicsBank\app\View\People\register.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\People\\register.ctp',
+)
+Request URL: /physicsBank/people/register
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-26 21:05:19 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php, line 153]
+2014-02-26 21:05:19 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 153)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 153, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 153, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 21:08:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.number_of_questions' in 'field list'
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Score`....', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Score`....', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Score`....', false)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Score), Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php(165): Model->find('all', Array)
+#7 [internal function]: PeopleController->history()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PeopleController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-26 21:09:06 Error: [MissingActionException] Action TestsController::choose_test() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestsController',
+  'action' => 'choose_test',
+)
+Request URL: /physicsBank/tests/choose_test
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 21:09:41 Error: [MissingActionException] Action TestsController::choosTest() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestsController',
+  'action' => 'choosTest',
+)
+Request URL: /physicsBank/tests/choosTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-26 21:10:01 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\physicsBank\app\View\Layouts\questionbank.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\Layouts\\questionbank.ctp',
+)
+Request URL: /physicsBank/tests/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(498): View->_getLayoutFileName('questionbank')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(468): View->renderLayout('', 'questionbank')
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-02-26 21:11:18 Error: [MissingViewException] View file "C:\xampp\htdocs\physicsBank\app\View\Tests\score.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\Tests\\score.ctp',
+)
+Request URL: /physicsBank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-26 21:20:11 Error: Fatal Error (1): Call to undefined function beforeFilter() in [C:\xampp\htdocs\physicsBank\app\Controller\PagesController.php, line 36]
+2014-02-26 21:20:11 Error: [FatalErrorException] Call to undefined function beforeFilter()
+Request URL: /physicsBank/
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-26 21:20:37 Error: Fatal Error (1): Call to undefined function beforeFilter() in [C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php, line 15]
+2014-02-26 21:20:37 Error: [FatalErrorException] Call to undefined function beforeFilter()
+Request URL: /physicsBank/tests/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-27 17:01:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.number_of_questions' in 'field list'
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Score`....', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Score`....', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Score`....', false)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Score), Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php(165): Model->find('all', Array)
+#7 [internal function]: PeopleController->history()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PeopleController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-15 16:34:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-03-15 16:34:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-03-18 18:21:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.number_of_questions' in 'field list'
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Score`....', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Score`....', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Score`....', false)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Score), Array)
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\PeopleController.php(165): Model->find('all', Array)
+#7 [internal function]: PeopleController->history()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PeopleController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-18 18:27:33 Error: [MissingViewException] View file "C:\xampp\htdocs\physicsBank\app\View\People\history.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\People\\history.ctp',
+)
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-18 18:29:01 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\physicsBank\app\View\Layouts\questionbank.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\Layouts\\questionbank.ctp',
+)
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(498): View->_getLayoutFileName('questionbank')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(468): View->renderLayout('', 'questionbank')
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-18 18:29:32 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\physicsBank\app\View\Layouts\physicsbank.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\physicsBank\\app\\View\\Layouts\\physicsbank.ctp',
+)
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(498): View->_getLayoutFileName('physicsbank')
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(468): View->renderLayout('', 'physicsbank')
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-18 20:43:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-03-18 20:43:47 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-03-18 21:06:04 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\xampp\htdocs\physicsBank\app\View\Pages\home.ctp, line 21]
+2014-03-18 21:06:04 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /physicsBank/
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:08:30 Error: [MissingActionException] Action PagesController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+)
+Request URL: /physicsBank/Pages/home
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-18 21:32:04 Error: Fatal Error (4): syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 76]
+2014-03-18 21:32:04 Error: [FatalErrorException] syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE)
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:34:09 Error: Fatal Error (4): syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 76]
+2014-03-18 21:34:09 Error: [FatalErrorException] syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE)
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:36:11 Error: Fatal Error (4): syntax error, unexpected 'numberOfQuestions' (T_STRING), expecting '&' or variable (T_VARIABLE) in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 76]
+2014-03-18 21:36:11 Error: [FatalErrorException] syntax error, unexpected 'numberOfQuestions' (T_STRING), expecting '&' or variable (T_VARIABLE)
+Request URL: /physicsBank/tests/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:36:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /physicsBank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Test))
+#5 C:\xampp\htdocs\physicsBank\app\Model\Test.php(77): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Model\Test.php(77): Test->loadModel('Question')
+#7 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(150): Test->genTest('5')
+#8 [internal function]: TestsController->doTest()
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-18 21:37:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /physicsBank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Test))
+#5 C:\xampp\htdocs\physicsBank\app\Model\Test.php(77): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Model\Test.php(77): Test->loadModel('Question')
+#7 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(150): Test->genTest('5')
+#8 [internal function]: TestsController->doTest()
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-18 21:48:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 89]
+2014-03-18 21:48:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /physicsBank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:48:41 Error: Fatal Error (1): Call to undefined function find() in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 89]
+2014-03-18 21:48:41 Error: [FatalErrorException] Call to undefined function find()
+Request URL: /physicsBank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 89, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 89, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:56:12 Error: Fatal Error (4): syntax error, unexpected ''allow_attempts'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 114]
+2014-03-18 21:56:12 Error: [FatalErrorException] syntax error, unexpected ''allow_attempts'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /physicsBank/tests/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 114, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 114, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 21:56:40 Error: Fatal Error (1): Call to a member function set() on a non-object in [C:\xampp\htdocs\physicsBank\app\Model\Test.php, line 111]
+2014-03-18 21:56:40 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /physicsBank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 111)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 111, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 111, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 22:09:50 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp, line 20]
+2014-03-28 22:09:50 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 22:09:59 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\physicsBank\app\View\People\dashboard.ctp, line 20]
+2014-03-28 22:09:59 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /physicsBank/people/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 22:27:06 Error: Fatal Error (4): syntax error, unexpected '65' (T_LNUMBER), expecting ')' in [C:\xampp\htdocs\physicsBank\app\View\People\suggestion.ctp, line 13]
+2014-03-28 22:27:06 Error: [FatalErrorException] syntax error, unexpected '65' (T_LNUMBER), expecting ')'
+Request URL: /physicsBank/people/suggestion
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 12:15:57 Error: [MissingControllerException] Controller class TestAnswersController could not be found.
+Exception Attributes: array (
+  'class' => 'TestAnswersController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/test_answers/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-29 12:16:26 Error: [MissingControllerException] Controller class TestAnswersController could not be found.
+Exception Attributes: array (
+  'class' => 'TestAnswersController',
+  'plugin' => NULL,
+)
+Request URL: /physicsBank/test_answers/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-29 14:50:51 Error: Fatal Error (4): syntax error, unexpected '$score' (T_VARIABLE), expecting ')' in [C:\xampp\htdocs\physicsBank\app\View\People\history.ctp, line 12]
+2014-03-29 14:50:51 Error: [FatalErrorException] syntax error, unexpected '$score' (T_VARIABLE), expecting ')'
+Request URL: /physicsBank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 15:21:12 Error: Fatal Error (1): Call to undefined method View::redirect() in [C:\xampp\htdocs\physicsBank\app\View\Pages\home.ctp, line 20]
+2014-03-29 15:21:12 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /physicsBank/
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 18:31:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'saveScore' at line 1
+Request URL: /physicsBank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('saveScore', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('saveScore', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('saveScore', Array, Array)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(800): DboSource->query('saveScore', Array, Object(Score))
+#5 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(249): Model->__call('saveScore', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(249): Score->saveScore('', NULL, 0, -1, '2014-04-01 18:3...')
+#7 [internal function]: TestsController->score()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-01 20:44:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'saveScore' at line 1
+Request URL: /physicsBank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('saveScore', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('saveScore', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('saveScore', Array, Array)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(800): DboSource->query('saveScore', Array, Object(Score))
+#5 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(252): Model->__call('saveScore', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(252): Score->saveScore('1', '4', 0.2, -1, '2014-04-01 20:4...')
+#7 [internal function]: TestsController->score()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-01 20:44:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'saveScore' at line 1
+Request URL: /physicsBank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('saveScore', Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('saveScore', Array, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('saveScore', Array, Array)
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(800): DboSource->query('saveScore', Array, Object(Score))
+#5 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(252): Model->__call('saveScore', Array)
+#6 C:\xampp\htdocs\physicsBank\app\Controller\TestsController.php(252): Score->saveScore('2', '4', 0.2, -1, '2014-04-01 20:4...')
+#7 [internal function]: TestsController->score()
+#8 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-02 11:20:35 Error: Fatal Error (4): syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in [C:\xampp\htdocs\physicsBank\app\Model\Score.php, line 61]
+2014-04-02 11:20:35 Error: [FatalErrorException] syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE)
+Request URL: /physicsBank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-15 18:50:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-15 18:50:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /physicsBank/People/login
+Stack Trace:
+#0 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\physicsBank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\physicsBank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\physicsBank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\physicsBank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\physicsBank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\physicsBank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
