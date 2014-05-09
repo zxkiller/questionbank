@@ -1694,3 +1694,55 @@ Stack Trace:
 #8 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-05-09 21:19:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /questionbank/people/login/1
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\questionbank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\questionbank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\questionbank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-05-09 21:19:55 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /questionbank/people/login/1
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(3474): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(3496): Model->setSource('people')
+#5 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#6 C:\xampp\htdocs\questionbank\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp\htdocs\questionbank\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Person', 'fields')
+#8 C:\xampp\htdocs\questionbank\app\View\People\login.ctp(9): FormHelper->create('Person')
+#9 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\questionbank\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#14 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

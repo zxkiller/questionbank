@@ -210,27 +210,10 @@ public function beforeFilter(){
 			$progressArray = array();
 			// get row in array, key=question_id, value=>answer_id
 			foreach ( $filteredArray as $question => $answerId) {
-				echo "QUESTION::".$question;
-				echo "	isset";
-				if(isset($answerId)){
-					echo '		YES';
-				} 
-				else{
-					echo '		NO';
-				}
-				echo "	equal -1";
-				if($answerId == -1){
-					echo '		YES';
-				} 
-				else{
-					echo '		NO';
-				}
+				
 				// there are some hidden fields, need to confirm that field is test's id or not
 				if(!is_numeric($question))
 					continue;
-				// if user heaven't answered that questions, go on
-				if($answerId == -1)
-					continue;	
 
 				// evaluate answerId by 1 becase:
 				// 		answer is return from 0-1
