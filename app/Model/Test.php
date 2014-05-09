@@ -70,10 +70,10 @@ class Test extends AppModel {
 
 	/*
 	 * generate test
-	 * @params: number of question, time limit
+	 * @params: number of question, time limit, category
 	 * @return: a test correspond to input parameters
 	 */
-	public function genTest($numberOfQuestions){
+	public function genTest($numberOfQuestions, $timeLimit, $categoryId){
 		return $this->Question->find('all', array(
 					'limit' => $numberOfQuestions,
 					'order' => 'rand()'
@@ -107,12 +107,17 @@ class Test extends AppModel {
 	 * @param: test parameters
 	 *
 	 */
-	public function saveTest($id, $timeLimit, $allowAttemps){
+	public function saveTest($id, $timeLimit, $allowAttemps, $categoryId){
 		$this->set(array(
 				'id' => $id, 
 				'time_limit' => $timeLimit,
 				'allow_attempts' => -1,
 			));
 		$this->save();
+
+		$this->save(array(
+				'Test' => array('id' => $id),
+				'Category' => array('id' => $categoryId)
+				));
 	}
 }

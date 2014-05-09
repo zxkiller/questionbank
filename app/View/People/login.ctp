@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="login form">
+<div class="login form" align="center">
     <?php echo $this->Session->flash('auth'); ?>
     <?php echo $this->Form->create('Person'); ?>
         <fieldset>

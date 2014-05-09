@@ -1245,3 +1245,452 @@ Stack Trace:
 #14 C:\xampp\htdocs\physicsBank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
 #15 C:\xampp\htdocs\physicsBank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 {main}
+2014-04-24 12:39:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\questionbank\app\Controller\PeopleController.php, line 139]
+2014-04-24 12:39:31 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /questionbank/People/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 139, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 139, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 13:11:22 Error: Fatal Error (1): Call to undefined method PeopleController::find() in [C:\xampp\htdocs\questionbank\app\Controller\PeopleController.php, line 138]
+2014-04-24 13:11:22 Error: [FatalErrorException] Call to undefined method PeopleController::find()
+Request URL: /questionbank/People/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 138)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 138, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 138, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 13:11:46 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 68]
+2014-04-24 13:11:46 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /questionbank/People/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:29:02 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 54]
+2014-04-24 17:29:02 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /questionbank/People/progress
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:29:19 Error: Fatal Error (1): Call to undefined method PeopleController::getProgresses() in [C:\xampp\htdocs\questionbank\app\Controller\PeopleController.php, line 173]
+2014-04-24 17:29:19 Error: [FatalErrorException] Call to undefined method PeopleController::getProgresses()
+Request URL: /questionbank/People/progress
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:29:44 Error: Fatal Error (1): Call to undefined method PeopleController::getProgresses() in [C:\xampp\htdocs\questionbank\app\Controller\PeopleController.php, line 173]
+2014-04-24 17:29:44 Error: [FatalErrorException] Call to undefined method PeopleController::getProgresses()
+Request URL: /questionbank/People/progress
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:30:18 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\questionbank\app\Controller\TestsController.php, line 250]
+2014-04-24 17:30:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /questionbank/tests/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 250)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 250, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 250, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:35:42 Error: Fatal Error (1): Call to undefined method TestsController::calculateProgress() in [C:\xampp\htdocs\questionbank\app\Controller\TestsController.php, line 268]
+2014-04-24 17:35:42 Error: [FatalErrorException] Call to undefined method TestsController::calculateProgress()
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 268)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 268, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 268, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:38:29 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 76]
+2014-04-24 17:38:29 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:39:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 17:43:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 17:44:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionSubcate...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 17:46:33 Error: Fatal Error (4): syntax error, unexpected '$subCategories' (T_VARIABLE), expecting ',' or ';' in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 78]
+2014-04-24 17:46:33 Error: [FatalErrorException] syntax error, unexpected '$subCategories' (T_VARIABLE), expecting ',' or ';'
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 78, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 78, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 17:46:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 17:46:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 17:48:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(77): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(77): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 20:48:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 21:25:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 21:28:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(76): Progress->loadModel('QuestionsSubcat...')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 22:06:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('loadModel', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('loadModel', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('loadModel', Array, Array)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(800): DboSource->query('loadModel', Array, Object(Progress))
+#5 C:\xampp\htdocs\questionbank\app\Model\Progress.php(77): Model->__call('loadModel', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(77): Progress->loadModel('Person')
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(268): Progress->calculateProgress(NULL, Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-04-24 22:16:27 Error: Fatal Error (1): Call to undefined function emtpy() in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 99]
+2014-04-24 22:16:27 Error: [FatalErrorException] Call to undefined function emtpy()
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 99)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 99, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 99, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-24 22:22:33 Error: Fatal Error (1): Call to undefined function emtpy() in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 98]
+2014-04-24 22:22:33 Error: [FatalErrorException] Call to undefined function emtpy()
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 98)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 98, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 98, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 01:35:20 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 100]
+2014-04-25 01:35:20 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 100, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 100, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 01:37:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\questionbank\app\Model\Score.php, line 75]
+2014-04-25 01:37:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /questionbank/people/history
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 75, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 75, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 01:46:10 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\xampp\htdocs\questionbank\app\Model\Progress.php, line 110]
+2014-04-25 01:46:10 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 110)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 110, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 110, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-26 17:27:51 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /questionbank/home
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-26 17:28:01 Error: [MissingControllerException] Controller class ChooseTestController could not be found.
+Exception Attributes: array (
+  'class' => 'ChooseTestController',
+  'plugin' => NULL,
+)
+Request URL: /questionbank/chooseTest
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-26 18:19:54 Error: [MissingActionException] Action PeopleController::score() could not be found.
+Exception Attributes: array (
+  'controller' => 'PeopleController',
+  'action' => 'score',
+)
+Request URL: /questionbank/people/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PeopleController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-01 10:04:19 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\xampp\htdocs\questionbank\app\View\Elements\do_test.ctp, line 14]
+2014-05-01 10:04:20 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /questionbank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-01 10:18:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'date(date) = 0'    LIMIT 1' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Progres...', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Progres...', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Progres...', false)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Progress), Array)
+#5 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(96): Model->find('first', Array)
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(269): Progress->calculateProgress('1', Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-01 10:19:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'date(date) = 2014-05-01'    LIMIT 1' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Progres...', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Progres...', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Progres...', false)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Progress), Array)
+#5 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(96): Model->find('first', Array)
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(269): Progress->calculateProgress('1', Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-01 10:19:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'date(date) = \'2014-05-01\''    LIMIT 1' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Progres...', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Progres...', Array, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Progres...', false)
+#4 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Progress), Array)
+#5 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2872): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\questionbank\app\Model\Progress.php(96): Model->find('first', Array)
+#7 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(269): Progress->calculateProgress('1', Array)
+#8 [internal function]: TestsController->score()
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#10 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-06 19:27:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '19:27:13  WHERE `person_id` = 1 AND `sub_category_id` = 38' at line 1
+Request URL: /questionbank/tests/score
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `questio...', Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\Database\Mysql.php(400): DboSource->execute('UPDATE `questio...')
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2539): Mysql->update(Object(Progress), Array, NULL, Array)
+#4 C:\xampp\htdocs\questionbank\app\Model\Progress.php(118): Model->updateAll(Array, Array)
+#5 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(269): Progress->calculateProgress('1', Array)
+#6 [internal function]: TestsController->score()
+#7 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#8 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-06 20:58:09 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\questionbank\app\Model\Test.php, line 118]
+2014-05-06 20:58:09 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /questionbank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 118, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 118, Array)
+#3 C:\xampp\htdocs\questionbank\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-06 20:58:33 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'test_id' cannot be null
+Request URL: /questionbank/tests/doTest
+Stack Trace:
+#0 C:\xampp\htdocs\questionbank\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(2014): DboSource->insertMulti(Object(AppModel), Array, Array)
+#2 C:\xampp\htdocs\questionbank\lib\Cake\Model\Model.php(1845): Model->_saveMulti(Array, NULL, Object(Mysql))
+#3 C:\xampp\htdocs\questionbank\app\Model\Test.php(121): Model->save(Array)
+#4 C:\xampp\htdocs\questionbank\app\Controller\TestsController.php(166): Test->saveTest(6, '5', -1, 2)
+#5 [internal function]: TestsController->doTest()
+#6 C:\xampp\htdocs\questionbank\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestsController), Array)
+#7 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\questionbank\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\questionbank\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

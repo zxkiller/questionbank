@@ -111,7 +111,7 @@ class PeopleController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 
-/**
+/*
  * login page
  */
     public function login() {
@@ -146,21 +146,30 @@ class PeopleController extends AppController {
 	}
 
 /*
-	history
+ * history
 */
 	public function history(){
 		$this->layout = 'question_bank';
-
 		$this->loadModel('Score');
 		$result = $this->Score->getAllScores($this->Session->read('Auth.User')['id']);
 		$this->set('scores', $result);
 	}
 
-	/*
-	 * suggestion
-	 */
+/*
+ * suggestion
+ */
 	public function suggestion(){
 		$this->layout = 'question_bank';
 
+	}
+
+/*
+ * progress
+ */	
+	public function progress(){
+		$this->layout = 'question_bank';
+		$this->loadModel('Progress');
+		$progresses = $this->Progress->getProgresses($this->Session->read('Auth.User')['id']);
+		$this->set('progresses', $progresses);
 	}
 }

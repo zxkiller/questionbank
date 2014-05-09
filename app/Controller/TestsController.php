@@ -154,7 +154,7 @@ public function beforeFilter(){
 			$this->layout = 'question_bank';
 
 			// query <number of questions> from db, random ID
-			$questions = $this->Test->genTest($this->data['Test']['number_of_questions']);
+			$questions = $this->Test->genTest($this->data['Test']['number_of_questions'], -1, -1);
 			$this->set('questions', $questions);
 
 			// create tests in database
@@ -162,8 +162,8 @@ public function beforeFilter(){
 			$this->set('testID', $testID);
 			$this->set('duration', $this->data['Test']['time_limit']);
 			$this->set('numberOfQuestions', $this->data['Test']['number_of_questions']);
-
-			$this->Test->saveTest($testID, $this->data['Test']['time_limit'], -1);
+			// save test: id, timeLimit, allow attemps, category(currently df is 2)
+			$this->Test->saveTest($testID, $this->data['Test']['time_limit'], -1, 2);
 
 			//create questions for test in db
 			$conn = mysql_connect("localhost:3306", 'root', 'Qwerty*');
@@ -172,19 +172,7 @@ public function beforeFilter(){
 				$query = 'INSERT INTO `tests_questions`(`test_id`, `question_id`) values('.$testID.','.$question['Question']['id'].');';
 				mysql_query($query, $conn);
 			}
-			mysql_close($conn);
-			
-			//save category
-			$this->Test->save(array(
-				'Test' => array
-				(
-					'id' => $testID
-				),
-				'Category' => array
-				(
-					'id' => 1)
-				)
-			);
+			mysql_close($conn);			
 		}
 		// if it's not a post, return to chooseTest
 		else{
@@ -201,7 +189,7 @@ public function beforeFilter(){
 		if( $this->request->is('post')){
 			
 			$this->layout = 'question_bank';
-			
+			pr($this->data);
 			//counter to determine score			
 			$correctCounter = 0;
 			$questionCounter = 0;
@@ -210,14 +198,6 @@ public function beforeFilter(){
 			// it is: increse correctCounter by 1
 			$this->loadModel('Answer');
 
-			// count questions
-			// skip non-numeric key because there are some hidden fields
-			foreach ($this->data as $question => $id) {
-				if(!is_numeric($question))
-					continue;
-				$questionCounter++;
-			}
-
 			// remove with int(0)
 			function my_filter($var){
 				return ($var !== NULL && $var !== FALSE && $var !== '');
@@ -225,35 +205,72 @@ public function beforeFilter(){
 
 			// filter empty-answered questions
 			// user did not tick in the answer
-			$filterd_array = array_filter($this->data, 'my_filter');
+			$filteredArray = array_filter($this->data, 'my_filter');
 
+			$progressArray = array();
 			// get row in array, key=question_id, value=>answer_id
-			foreach ( $filterd_array as $question => $id) {
-
+			foreach ( $filteredArray as $question => $answerId) {
+				echo "QUESTION::".$question;
+				echo "	isset";
+				if(isset($answerId)){
+					echo '		YES';
+				} 
+				else{
+					echo '		NO';
+				}
+				echo "	equal -1";
+				if($answerId == -1){
+					echo '		YES';
+				} 
+				else{
+					echo '		NO';
+				}
 				// there are some hidden fields, need to confirm that field is test's id or not
 				if(!is_numeric($question))
 					continue;
-				if($id == -1)
+				// if user heaven't answered that questions, go on
+				if($answerId == -1)
 					continue;	
-				$id++;
+
+				// evaluate answerId by 1 becase:
+				// 		answer is return from 0-1
+				// 		db has answer id 1-4
+				$answerId++;
 
 				$result = $this->Answer->find('first', array(
 					'recursive' => -1,
-					'conditions' => 'question_id = '.$question.' and id = '.$id));
+					'conditions' => array(
+						'question_id' => $question,
+						'id' => $answerId
+						)
+					));
+				// count correct questions
+				// store correctness to progressArray for calculate progress
 				if( $result['Answer']['correctness'] == 1){
 					$correctCounter++;
+					$progressArray[$question] = 1;
 				}
+				else{
+					$progressArray[$question] = 0;
+				}
+				// countnumber of questions for scoring
+				$questionCounter++;
 				
 			}
-			if($this->data['testID'] != null){
+			$user = $this->Session->read('Auth.User');
+			if(!empty($user)){
 				//save to database
 				//save score
 				$this->loadModel('Score');
-				$this->Score->saveScore($this->data['testID'], $this->Session->read('Auth.User')['id'], $questionCounter==0?0:$correctCounter/$questionCounter, -1, date("Y-m-d H:i:s"));
+				$this->Score->saveScore($this->data['testID'], $user['id'], $questionCounter==0?0:$correctCounter/$questionCounter, -1, date("Y-m-d H:i:s"));
+
+				// save score_answers
+				
 			}
-			// set progress
+			// calculate progress
 			$this->loadModel('Progress');
-			// $this->Progress->saveProgress($this->Session->read('Auth.User')['id'], $);
+			$this->Progress->calculateProgress($user['id'], $progressArray);
+			
 			// set variable to view
 			$this->set('finalScore', $correctCounter);
 			$this->set('correct', array($correctCounter, $questionCounter));

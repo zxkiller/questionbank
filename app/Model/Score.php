@@ -72,8 +72,10 @@ class Score extends AppModel {
  * get all user
  */
 	public function getAllScores($id){
-		return $this->Score->find('all', array(
-				'conditions' => 'Score.person_id = '.$id,
+		return $this->find('all', array(
+				'conditions' => array(
+					'Score.person_id' => $id,
+				),
 				'fields' => array(
 					'Score.score',
 					'Score.time_taken',
